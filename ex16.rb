@@ -11,10 +11,7 @@ STDIN.gets
 puts "Opening the file..."
 target = File.open(filename, 'w')
 
-puts "Truncating the file. Goodbye!"
-target.truncate(target.size)
-
-puts "Noew I'm going to ask you for three lines."
+puts "Now I'm going to ask you for three lines."
 
 print "line 1: "; line1 = STDIN.gets.chomp()
 print "line 2: "; line2 = STDIN.gets.chomp()
